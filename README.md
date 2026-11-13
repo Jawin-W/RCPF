@@ -4,13 +4,6 @@
 
 This project presents **Reconstruction-Ranked Complementary Patch Fusion (RCPF)**, a local-input forensic framework for generalizable AI-generated image detection. Instead of extracting features from an entire image, RCPF makes image-level predictions from a small set of sampled local patches.
 
-**Authors:** Junrong Huang, Xiaorong Ma, and Weiqi Luo  
-**Affiliation:** School of Computer Science and Engineering, Sun Yat-sen University, Guangzhou, China
-
-## Abstract
-
-Most existing AI-generated image detectors perform image-level forensics by directly processing the entire input image. In contrast, we explore a local-input forensic paradigm that determines image authenticity from randomly sampled patches covering only a small fraction of the image. Specifically, we propose Reconstruction-Ranked Complementary Patch Fusion (RCPF), a sampled patch ranking and fusion framework for generalizable AI-generated image detection. RCPF first randomly samples local patches from the input image and ranks them according to relative reconstruction difficulty using a frozen masked autoencoder trained on real patches. The ranked patches are then divided into complementary high- and low-score groups, which are separately modeled to preserve heterogeneous local forensic evidence. Their group-specific representations are subsequently fused for real/fake classification. Extensive experiments on OpenSDI and AIGIBench demonstrate strong generalization across unseen generators and heterogeneous image sources. RCPF achieves 92.87% mean accuracy and 92.65% mean F1-score on OpenSDI, and 79.7% mean accuracy and 83.7% average precision on AIGIBench, yielding the best overall mean performance among the compared methods. Notably, RCPF achieves these results while using patches that cover only approximately 1.56%–25% of the image area, demonstrating that carefully organized sparse local forensic evidence provides an effective and generalizable alternative to conventional whole-image feature extraction.
-
 ## Framework
 
 The model framework figure is available as a PDF:
