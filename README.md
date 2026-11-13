@@ -2,13 +2,13 @@
 
 ## Generalizable AI-Generated Image Detection via Sampled Patch Ranking and Fusion
 
-This project presents **Reconstruction-Ranked Complementary Patch Fusion (RCPF)**, a local-input forensic framework for generalizable AI-generated image detection. Instead of extracting features from an entire image, RCPF makes image-level predictions from a small set of sampled local patches.
+**Reconstruction-Ranked Complementary Patch Fusion (RCPF)**, a local-input forensic framework for generalizable AI-generated image detection. Instead of extracting features from an entire image, RCPF makes image-level predictions from a small set of sampled local patches.
 
 ## Framework
 
 The model framework figure is available as a PDF:
 
-[Download the RCPF framework figure](figure2.pdf)
+[the RCPF framework figure](figure/figure2.pdf)
 
 ## Main Results
 
@@ -32,4 +32,4 @@ RCPF achieves the best mean performance on both benchmarks, with particularly st
 
 We evaluate 100 random seeds (10–1000, step 10) for patch sampling with default settings. As shown in [Figure 3](figure3.pdf), the spans of mean Acc. and mean A.P. are 0.23% and 0.28% on AIGIBench, while those of mean Acc. and mean F1 are 0.29% and 0.33% on OpenSDI, respectively, indicating negligible variation from random sampling.
 
-[View Figure 3: Random-sampling ablation results (PDF)](figure3.pdf)
+[Figure 3: Random-sampling ablation results (PDF)](figure/figure3.pdf)
